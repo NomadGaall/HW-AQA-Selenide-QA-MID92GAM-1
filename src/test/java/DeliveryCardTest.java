@@ -18,7 +18,7 @@ public class DeliveryCardTest {
     public void cardSuccessfullyBooked() {
         open("http://localhost:9999");
 
-        $("[data-test-id='city'] input").setValue("Уфв");
+        $("[data-test-id='city'] input").setValue("УФА");
         $("[data-test-id=date] input").doubleClick();
         $("[data-test-id='date'] input").sendKeys(dateGenerate(5, "dd.MM.yyyy"));
         $("[data-test-id='name'] input").setValue("Иванов Иван Иванович");
